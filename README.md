@@ -1,6 +1,5 @@
 # music_player
-
-A new Flutter project.
+A  music player  written in flutter  ,using  Getx framework.
 
 ## Getting Started
 
