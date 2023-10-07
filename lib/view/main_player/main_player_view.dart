@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:music_player/view/songs/play_list_view.dart';
+import 'package:music_player/view/main_player/play_playlist_view.dart';
 import 'package:sleek_circular_slider/sleek_circular_slider.dart';
 
 import '../../common/color_extension.dart';
 import '../../common_widget/play_bttom_button.dart';
+import 'driver_mode_view.dart';
 
 class MainPlayerView extends StatefulWidget {
   const MainPlayerView({super.key});
@@ -53,7 +54,7 @@ class _MainPlayerViewState extends State<MainPlayerView> {
               padding: EdgeInsets.zero,
               onSelected: (selectIndex) {
                 if (selectIndex == 9) {
-                  // Get.to( () => const DriverModeView() );
+                  Get.to(() => const DriverModeView());
                 }
               },
               itemBuilder: (context) {
@@ -295,7 +296,7 @@ class _MainPlayerViewState extends State<MainPlayerView> {
                   title: "Playlist",
                   icon: "assets/img/playlist.png",
                   onPressed: () {
-                    Get.to(() => const PlaylistsView());
+                    Get.to(() => const PlayPlayListView());
                   },
                 ),
                 PlayerBottomButton(

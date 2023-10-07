@@ -138,7 +138,7 @@ class _MainTabViewState extends State<MainTabView>
         children: const [
           HomeView(),
           SongsView(),
-          SettingView(),
+          SettingsView(),
         ],
       ),
       bottomNavigationBar: Container(
